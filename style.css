@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.div{
+    background:linear-gradient(rgba(32, 32, 32,0.5), rgba(32, 32, 32,0.5)), url(./images/pexels-hitesh-choudhary-340152-min.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+header{
+    color:#Fff;
+    padding:2em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+a{
+    color:#Fff;
+    text-decoration: none;
+    padding:1em;
+    font-weight: bold;
+    transition:0.5s;
+}
+a:hover{
+   background: #fff;
+   color:rgb(54, 185, 119)
+}
+.section1{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    margin:0 auto;
+    text-align: center;
+}
+.section1 p{
+    font-size: 2em;
+    margin-bottom: 30px;
+    color:#fff;
+}
+.btn1{
+    padding:10px 20px;
+    border:none;
+    border-radius: 20px;
+    outline:none;
+}
+.btn2{
+    padding:10px 20px;
+    border:none;
+    border-radius: 20px;
+    background:rgb(54, 185, 119);
+    margin-left: -30px;
+    color: #fff;
+}
+.section2{
+    margin: 2em 3em;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.section2 .content h1{
+ padding: 1em 0;
+}
+.section2 .content h3{
+ padding: 2em 0 10px 0;
+}
+.section2 .content a{
+ padding: 0 1em 0 0;
+ color:black;
+ margin-bottom: 20px;
+}
+img{
+    max-width:100%;
+}
+.members{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3em 2em;
+}
+.text{
+    padding:2em 1.5em;
+ 
+}
+.text h3,h4{margin-bottom: 10px;
+ 
+}
+.team{
+    padding: 4em 2em;
+    background:rgb(243, 243, 243);
+}
+.team >p{
+    text-align: center;
+    font-size: 2em;
+}
+.card{
+    background:#fff;
+}
+.plan{
+       padding: 4em 2em;
+      background:rgb(243, 243, 243)
+}
+.plan p{
+text-align: center;
+margin-bottom: 1em;
+    font-size: 2em;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); width:90%;
+       margin:0 auto;
+       padding: 0 3em;
+}
+.card1{
+    padding:1em 4em;
+    text-align: left;
+    background:#fff;
+}
+.card1 ul{
+    padding:1em 0;
+    margin-top: 10px;
+    border-bottom:2px solid silver;
+    border-top:2px solid silver;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+h4{
+    margin:1em 0;
+    size: 2em;
+    display: inline-block;
+}
+.register{
+    margin: 1em 0;
+    border:none;
+    background:rgb(54, 185, 119);
+    padding: 15px 20px;
+    border-radius: 20px;
+    color:#Fff;
+    font-weight: bold;
+    outline:none;
+    transition:0.5s;
+}
+.register:hover{
+    transform: scale(1.1);
+}
+.reg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan1{
+          padding: 4em 2em;
+}
+.plan1 >p{
+         text-align: center;
+margin-bottom: 1em;
+    font-size: 2em;
+}
+textarea{
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid silver;
+}
+.input{
+    border:none;
+    border-bottom: 1px solid silver;
+    padding:1em 1.5em;
+    outline:none;
+    margin-right: 10px;
+}
+.textarea{
+    width:70%;
+    margin:0 auto;
+}
+.textarea>div{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.msgBtn{
+    padding:10px 4em;
+    color:#fff;
+    background: black;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+}
+footer{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top:5em;
+    margin-bottom: 2em;
+    color:grey;
+}
+.show-mobile,.cont {
+  display: none;
+}
+ .exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+@media only screen and (max-width:700px){
+  header{
+      padding: 2em;
+  }
+    .show-mobile {
+    display: block;
+  }
+  
+  .hide-mobile{
+      display:none;
+  }
+  .menu-items {
+    display: block;
+  }
+
+  #nav {
+    transition: 0.6s;
+    width: 0;
+  }
+  nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    padding: 3em 0 0 0;
+    text-align: center;
+  }
+  nav ul a {
+    color: #fff;
+    padding: 1em 2em;
+    background-color: #494948;
+    display: block;
+    transition: 0.5s;
+  }
+  nav ul a:hover {
+    color: #fff;
+    background-color: #5a5a5a;
+  }
+  .section1{
+      display:grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+  }
+  .section2{
+    margin: 2em 1em;
+    display:grid;
+    grid-template-columns:  1fr;
+    align-items: center;
+}
+.members{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 3em 1em;
+    width:100%;
+}
+.team{
+    padding:0;
+    background:rgb(243, 243, 243);
+}
+.cards{
+    display:grid;
+    grid-template-columns: 1fr; width:90%;
+       margin:0 auto;
+       padding: 0 3em;
+}
+.textarea>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.msgBtn{
+   margin-top:20px;
+}
+
+.plan{
+       padding: 4em 0;
+      background:rgb(243, 243, 243)
+}
+
+.cards{
+    display:grid;
+    width:90%; 
+    grid-template-columns: 1fr;
+    margin:0 auto;
+    padding:0;
+     
+}
+.card1{
+    padding:1em 1em;
+    text-align: left;
+    background:#fff;
+}
+}
